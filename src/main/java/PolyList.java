@@ -112,5 +112,30 @@ public class PolyList {
         return result;
     }
 
-    public static void main(String[] args){}
+    public static void main(String[] args){
+        PolyList polyList1 = new PolyList();
+        PolyList polyList2 = new PolyList();
+
+        // 设置第一组第一个节点值
+        PNode pNode1 = new PNode();
+        pNode1.setExp(2);
+        pNode1.setRat(2);
+        // 设置第一组第二个节点值
+        PNode pNode2 = new PNode();
+        pNode2.setExp(3);
+        pNode2.setRat(100);
+        // 插入数据
+        polyList1.insert(pNode1);
+        polyList1.insert(pNode2);
+
+        // 设置第二组第一个节点值
+        PNode pNode3 = new PNode();
+        pNode3.setExp(50);
+        pNode3.setRat(33);
+        // 插入数据
+        polyList2.insert(pNode3);
+
+        System.out.println("打印第一组数据：" + polyList1.print());
+        System.out.println("打印第二组数据：" + polyList2.print());
+    }
 }
